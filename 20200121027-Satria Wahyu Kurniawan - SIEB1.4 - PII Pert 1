@@ -1,0 +1,169 @@
+<?php
+
+class tv {
+    public  $nama,
+            $merk,
+            $warna,
+            $ukuran,
+            $bentuk;
+
+    public function nyalakantv() {
+
+    }
+
+    public function matikantv() {
+
+    }
+    
+    public function hubungkankehandphone() {
+
+    }
+
+    public function hubungkankeinternet() {
+
+    }
+
+    public function aksespenyimpanan() {
+
+    }
+
+    public function carichannel() {
+
+    }
+
+}
+
+class tvdigital extends tv {
+    public $proyeksilayar = false;
+    public $koneksiinternet = false;
+
+    public function proyeksilayarhidup(){
+        $this->proyeksilayar = true;
+        return "Proyeksi Layar dinyalakan, Terkoneksi ke Handphone!";
+    }
+
+    public function nyalakankoneksiinternet(){
+        $this->koneksiinternet = true;
+        return "Koneksi Internet dinyalakan, Terhubung ke Youtube!";
+    }
+}
+
+class tvanalog extends tv {
+    public $usb = false;
+    public $antena = false;
+
+    public function masukkanusb(){
+        $this->usb = true;
+        return "USB Dimasukkan, Penyimpanan diakses!";
+    }
+
+    public function colokkanantena(){
+        $this->antena = true;
+        return "Antena dimasukkan, Silahkan Cari Channel!";
+    }
+}
+
+$tv1 = new tvdigital();
+echo $tv1->hubungkankehandphone();
+echo "<br>";
+echo $tv1->proyeksilayarhidup();
+echo "<br>";
+echo $tv1->hubungkankeinternet();
+echo "<br>";
+echo $tv1->nyalakankoneksiinternet();
+echo "<br>";
+$tv2 = new tvanalog();
+echo $tv2->aksespenyimpanan();
+echo "<br>";
+echo $tv2->masukkanusb();
+echo "<br>";
+echo $tv2->carichannel();
+echo "<br>";
+echo $tv2->colokkanantena();
+echo "<hr>";
+?>
+
+<?php
+
+class laptop {
+    public  $nama,
+            $merk,
+            $warna,
+            $ram,
+            $disk;
+
+    public function nyalakanlaptop() {
+
+    }
+
+    public function matikanlaptop() {
+
+    }
+    
+    public function pemburambackgroundgambar() {
+
+    }
+
+    public function penghematbaterai() {
+
+    }
+
+    public function percepatcharger() {
+
+    }
+
+    public function pengerasspeakerextra() {
+
+    }
+
+}
+
+class laptopwindows extends laptop {
+    public $batterysaver = false;
+    public $extraspeaker = false;
+
+    public function nyalakanbatterysaver(){
+        $this->batterysaver = true;
+        return "Battery Saver Dinyalakan, Baterai dihemat!";
+    }
+
+    public function nyalakanextraspeaker(){
+        $this->extraspeaker = true;
+        return "Extra Speaker Dinyalakan, Suara Extra Besar!";
+    }
+}
+
+class laptopmacos extends laptop {
+    public $imagebackgroundblurr = false;
+    public $speedcharger = false;
+
+    public function nyalakanimagebackgroundblurr(){
+        $this->imagebackgroundblurr = true;
+        return "Image Background Blurr Dihidupkan, Background Buram!";
+    }
+
+    public function nyalakanspeedcharger(){
+        $this->speedcharger = true;
+        return "Speed Charger Dinyalakan!";
+    }
+}
+
+$laptop1 = new laptopwindows();
+echo $laptop1->penghematbaterai();
+echo "<br>";
+echo $laptop1->nyalakanbatterysaver();
+echo "<br>";
+echo $laptop1->pengerasspeakerextra();
+echo "<br>";
+echo $laptop1->nyalakanextraspeaker();
+echo "<br>";
+$laptop2 = new laptopmacos();
+echo $laptop2->pemburambackgroundgambar();
+echo "<br>";
+echo $laptop2->nyalakanimagebackgroundblurr();
+echo "<br>";
+echo $laptop2->percepatcharger();
+echo "<br>";
+echo $laptop2->nyalakanspeedcharger();
+
+?>
