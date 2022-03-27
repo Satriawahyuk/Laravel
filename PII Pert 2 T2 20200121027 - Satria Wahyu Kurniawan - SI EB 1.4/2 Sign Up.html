@@ -1,0 +1,100 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ilfeel Mask by Rissan.id</title>
+	<link rel="shortcut icon" href="img/Rissan.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<div class="container">
+	
+	<div class="header">
+	<img src="img/Rissan.id.png">
+	</div>
+
+<div class="topnav" id="myTopnav">
+		<a href="index.php">Home</a>
+		<a href="1 Login Page.html" style="float: right; color: red">Log In</a>
+		<a href="2 Sign Up.html" style="float: right; color: red">Sign Up</a>
+		<a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<div class="main">
+
+		<div class="col-2">
+			<h3>Daftar Akun</h3>
+			<form>
+
+				<p><center>Note: (*) Boleh di Kosongkan</center></p>
+
+				<label>Nama Lengkap :</label>
+				<input type="text" name"Nama">
+				
+				<label>Tanggal Lahir :</label>
+				<input type="date" name"Tanggal">
+				
+				<label>Jenis Kelamin :</label>
+				<input type="radio" name"Jenis" value="Laki-Laki">Laki-Laki
+				<input type="radio" name"Jenis" value="Perempuan">Perempuan
+				
+				<label>No Handphone :</label>
+				<input type="number" name"No Telp">
+				
+				<label>Email :</label>
+				<input type="email" name"Email">
+
+				<label>Password :</label>
+				<input type="password" name"Password">
+
+				<label>WhatsApp* :</label>
+				<input type="text" name"WhatsApp">
+
+				<label>Instagram* :</label>
+				<input type="text" name"Instagram">
+
+				<label>Facebook* :</label>
+				<input type="text" name"Facebook">
+
+				<label>Alamat :</label>
+				<textarea name"Alamat" rows ="10" cols="10"></textarea>
+				
+				<label>Negara:</label>
+				<select name="Negara">
+					<option value="Indonesia">Indonesia</option>
+					<option value="Vietnam">Vietnam</option>
+					<option value="Thailand">Thailand</option>
+					<option value="Philippines">Philippines</option>
+					<option value="China">China</option>
+				</select>
+				
+				<center><input type="submit" name"submit" value="Simpan"></center>
+
+				<p><center>----ATAU SIGN UP
+					 DENGAN----</center></p>
+				<center><img src="img/FGA.png"></center>
+				
+			</form>
+		</div>
+
+		<div class="footer">
+			<p align="center">Copyright &copy; Satria Wahyu Kurniawan 2022 </p></div>
+			</div>
+
+</div>
+
+<script type="text/javascript">
+	function myFunction(){
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		}else {
+			x.className = "topnav";
+		}
+	}
+</script>
+
+</body>
+</html>
